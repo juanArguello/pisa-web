@@ -1,0 +1,60 @@
+.chat-icons-group {
+    position: fixed;
+    width: 56px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    margin: 0 25px 95px 0;
+    overflow: visible;
+    z-index: 100;
+    text-align: center;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-decoration: none !important;
+    color: #fff !important;
+    background-color: #28a745;
+    border: #28a745;
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    transition: all 0.3s;
+}
+
+.chat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .20);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background-color: #31D92B;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.chat-icons-group .chat-icon a {
+    display: block;
+    padding: 10px;
+    outline: none;
+}
+
+
+.chat-icons-group .chat-icon .ci-whatsapp {
+    background-color: #31D92B;
+}
+
+.chat-icons-group .chat-icon .ci-tel {
+    background-color: darkgreen;
+}
+

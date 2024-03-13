@@ -1,0 +1,17 @@
+<div class="container-fluid mb-3">
+    <div class="card border-info">
+        <div class="card-header text-center">{{tituloPagina}}</div>
+        <div class="card-body">
+            <!-- <h5 class="card-title">Info card title</h5> -->
+            <h1>Direccion: </h1> Lambare
+
+
+
+        </div>
+        <div *ngIf="apiLoaded | async" >
+            <google-map height="300px" width="800px"  [options]="mapOptions">
+                <map-marker [position]="marker.position"></map-marker>
+            </google-map> 
+        </div>
+    </div>
+</div>
