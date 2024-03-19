@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { BrowserDetectorService } from '../services/browser-detector.service';
+
+
 
 @Component({
     selector: 'app-chat',
@@ -8,5 +11,18 @@ import { Component } from '@angular/core';
     styleUrl: './chat.component.css'
 })
 export class ChatComponent {
-    url_api_whatsapp: string = 'https://api.whatsapp.com/send?phone=595981662048&text=%20Hola!%20Quiero%20contratar%20sus%20servicios!'
+
+    constructor(private browser: BrowserDetectorService) { }
+
+    private mensaje: string = '%20Hola!%20Quiero%20contratar%20sus%20servicios!';
+    private numeroTelefono: number = 595981662048;
+    public url_api_whatsapp: string = 'https://api.whatsapp.com/send?phone=' + this.numeroTelefono + '&text=' + this.mensaje
+
+    public isMobile(){
+        return this.browser.isMobile();
+    }
+
+    public isDesktop(){
+        return this.browser.isDesktop();
+    }
 }

@@ -1,0 +1,25 @@
+/* .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;  
+    height: 0;
+ }
+ 
+ .map-responsive app-google-map{
+    left: 0;
+    top: 0;
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+ }  */
+
+ google-map {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    google-map {
+      height: 300px;
+    }
+  }

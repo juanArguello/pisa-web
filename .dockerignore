@@ -1,0 +1,11 @@
+#.dockerignore
+.git
+.editorconfig
+/.vscode/*
+/node_modules
+/e2e
+/docs
+/dist
+.gitignore
+*.zip
+README.md

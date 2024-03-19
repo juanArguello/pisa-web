@@ -2,7 +2,9 @@
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
- .card-footer{
-    background-color: white;
- }
+.card-footer {
+   background-color: white;
+}
+
+
 

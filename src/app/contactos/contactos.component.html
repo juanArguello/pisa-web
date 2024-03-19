@@ -1,17 +1,14 @@
-<div class="container-fluid mb-3">
-    <div class="card border-info">
-        <div class="card-header text-center">{{tituloPagina}}</div>
-        <div class="card-body">
-            <!-- <h5 class="card-title">Info card title</h5> -->
-            <h1>Direccion: </h1> Lambare
-
-
-
+<div class="card border-info mb-lg-5 w-auto">
+    <div class="card-header text-center">{{tituloPagina}}</div>
+    <div class="card-body">
+        <!-- <h5 class="card-title">Info card title</h5> -->
+        <div class="container">
+            <p> <span class="h3">Direcci&oacute;n: </span>Ciudad de Lambare calle 5 de Junio 659 c/ Nanawa</p>
         </div>
-        <div *ngIf="apiLoaded | async" >
-            <google-map height="300px" width="800px"  [options]="mapOptions">
-                <map-marker [position]="marker.position"></map-marker>
-            </google-map> 
-        </div>
+    </div>
+    <div  >
+        @defer{
+            <app-google-map></app-google-map>
+        }
     </div>
 </div>

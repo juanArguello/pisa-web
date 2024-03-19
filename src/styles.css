@@ -5,6 +5,7 @@
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+
 body{
     overflow-x: hidden; /* Prevent scroll on narrow devices */
 } 
