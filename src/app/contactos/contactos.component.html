@@ -1,14 +1,18 @@
-<div class="card border-info mb-lg-5 w-auto">
-    <div class="card-header text-center">{{tituloPagina}}</div>
-    <div class="card-body">
-        <!-- <h5 class="card-title">Info card title</h5> -->
-        <div class="container">
-            <p> <span class="h3">Direcci&oacute;n: </span>Ciudad de Lambare calle 5 de Junio 659 c/ Nanawa</p>
-        </div>
+<div class="card border-info mb-5 mt-4" style="max-width: 95%;">
+    <div class="card-header text-center p-3 text-primary-emphasis">
+        <h6>{{tituloPagina}}</h6>
     </div>
-    <div  >
-        @defer{
+    <div class="card-body text-center">
+        <div class="row">
+            <p class="h6"><i class="bi bi-geo-alt"></i> {{direccion}}</p>
+            <p class="h6"><a [href]="linkInstagram" class="text-dark"><i class="bi bi-instagram"
+                        style="color: #cc2366;"></i> {{nombreEmpresa}}</a></p>
+            <p class="h6"><i class="bi bi-telephone" style="color: green;"></i> {{telefono}}</p>
+            <p class="h6"><a [href]="'mailto:'+correo" class="text-dark"><i class="bi bi-envelope-fill"></i>
+                    {{correo}}</a></p>
+        </div>
+        <div class="row mt-2">
             <app-google-map></app-google-map>
-        }
+        </div>
     </div>
 </div>

@@ -10,6 +10,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 	styleUrl: './google-map.component.css'
 })
 export class GoogleMapComponent {
+	
 	constructor() { }
 
 	ngOnInit(): void { }

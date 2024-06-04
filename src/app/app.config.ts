@@ -6,7 +6,7 @@ import { provideClientHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
     providers: [
-        provideRouter(routes), 
+        provideRouter(routes),
         provideClientHydration()
     ]
 };

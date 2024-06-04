@@ -15,7 +15,7 @@ export class ChatComponent {
     constructor(private browser: BrowserDetectorService) { }
 
     private mensaje: string = '%20Hola!%20Quiero%20contratar%20sus%20servicios!';
-    private numeroTelefono: number = 595981662048;
+    public numeroTelefono: number = 595981662048;
     public url_api_whatsapp: string = 'https://api.whatsapp.com/send?phone=' + this.numeroTelefono + '&text=' + this.mensaje
 
     public isMobile(){
@@ -25,4 +25,6 @@ export class ChatComponent {
     public isDesktop(){
         return this.browser.isDesktop();
     }
+
+   
 }

@@ -3,26 +3,30 @@
         <a class="navbar-brand" href="#">
             <img src="./assets/images/pisa.png" alt="Logo" width="90" height="35" class="d-inline-block align-text-top">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" #navbarSupportedContent>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">{{nombresCabeceras[0]}}</a>
+                    <a class="nav-link text-white" aria-current="page" (click)="closeMenu()" routerLink="/"
+                        routerLinkActive="active">{{nombresCabeceras[0]}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">{{nombresCabeceras[1]}}</a>
+                    <a class="nav-link text-white" (click)="closeMenu()" routerLink="nosotros">{{nombresCabeceras[1]}}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                       {{nombresCabeceras[2]}}
+                        {{nombresCabeceras[2]}}
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                        <li>
+                            <a class="dropdown-item text-white" (click)="closeMenu()" routerLink="productos" >
+                                Lista Productos
+                            </a>
+                        </li>
                         <li><a class="dropdown-item text-white" href="#">Another action</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -34,7 +38,7 @@
                     <a class="nav-link  text-white" href="#">{{nombresCabeceras[3]}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  text-white" href="#" routerLink="contactos" routerLinkActive="active" >
+                    <a class="nav-link  text-white" (click)="closeMenu()" routerLink="contactos" >
                         {{nombresCabeceras[4]}}
                     </a>
                 </li>

@@ -1,11 +1,8 @@
-import { GoogleMap, GoogleMapsModule } from '@angular/google-maps';
 import { HeaderComponent } from './../header/header.component';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
-import { Observable, catchError, map, of } from 'rxjs';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { GoogleMapComponent } from '../google-map/google-map.component';
 
 
@@ -18,7 +15,12 @@ import { GoogleMapComponent } from '../google-map/google-map.component';
 })
 export class ContactosComponent {
 
+    public nombreEmpresa: string = 'Proveedora Integral S.A.';
     public tituloPagina: string = 'Contactos';
+    public direccion: string = '5 de Junio 659 c/ Nanawa. Lambaré - Paraguay';
+    public correo: string = 'contacto@pisa.com.py';
+    public telefono: string = '+595 981 662 048';
+    public linkInstagram: string = 'https://www.instagram.com/';
 
     
 
