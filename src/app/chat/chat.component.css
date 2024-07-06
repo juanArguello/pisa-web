@@ -58,3 +58,37 @@
     background-color: darkgreen;
 }
 
+.btn-top {
+    display: block; /* Ocultar el botón inicialmente */
+    position: fixed; /* Fijarlo en la pantalla */
+    bottom: 20px;
+    /* Espacio desde abajo */
+    right: 10px;
+    /* Espacio desde la derecha */
+    z-index: 99;
+    /* Asegurar que esté por encima de otros elementos */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    border: none;
+    /* Sin borde */
+    outline: none;
+    /* Sin outline */
+    background-color: white;
+    /* Color de fondo */
+    color: #31D92B;
+    /* Color del texto */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar el ratón */
+    padding: 15px;
+    /* Relleno del botón */
+    border-radius: 10px;
+    /* Bordes redondeados */
+
+}
+
+
+
+#scrollUpBtn:hover {
+    background-color: darkgreen;
+    /* Color de fondo al pasar el ratón */
+}

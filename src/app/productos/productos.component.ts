@@ -10,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class ProductosComponent {
 
+	public intervalCarouselItem: number = 3000;
+	
 }

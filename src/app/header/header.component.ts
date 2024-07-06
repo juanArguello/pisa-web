@@ -10,7 +10,7 @@ import { BrowserDetectorService } from '../services/browser-detector.service';
     styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-    public nombresCabeceras: string[] = ['Inicio', 'Nosotros', 'Productos', 'Servicios', 'Contactos'];
+    public headers: string[] = ['Inicio', 'Nosotros', 'Productos', 'Servicios', 'Contactos'];
     private plataforma = inject(BrowserDetectorService);
     @ViewChild('navbarSupportedContent') navbarContent!: ElementRef;
 
@@ -22,4 +22,6 @@ export class HeaderComponent {
             }
         }
     }
+
+    
 }

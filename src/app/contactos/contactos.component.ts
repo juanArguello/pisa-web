@@ -20,7 +20,9 @@ export class ContactosComponent {
     public direccion: string = '5 de Junio 659 c/ Nanawa. Lambaré - Paraguay';
     public correo: string = 'contacto@pisa.com.py';
     public telefono: string = '+595 981 662 048';
-    public linkInstagram: string = 'https://www.instagram.com/';
+    public linkInstagram: string = 'https://www.instagram.com/proveedora_integral_sa';
+    public linkGoogleMaps: string = "https://maps.app.goo.gl/AoWemygNLzx63k119";
+    
 
     
 

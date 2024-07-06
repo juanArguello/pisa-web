@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
 	selector: 'app-home',
 	standalone: true,
-	imports: [],
+	imports: [RouterLink],
 	templateUrl: './home.component.html',
 	styleUrl: './home.component.css'
 })
@@ -23,4 +24,5 @@ export class HomeComponent {
 		"soluciones ofrecidas a través de nuestros profesionales que se " +
 		"encargan del análisis, diseño, implementación y optimización " +
 		"de las soluciones.";
+	
 }

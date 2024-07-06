@@ -1,6 +1,5 @@
-<div id="main" class="mt-5 mb-5">
-
-    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+<div class="container-fluid mt-5 mb-5">
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -10,7 +9,7 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="{intervalCarouselItem}">
                 <img ngSrc="./assets/images/1.png" height="450" width="100" class="fill d-block w-100" alt="..."
                     priority>
                 <div class="carousel-caption">
@@ -18,7 +17,7 @@
                     <p>We had such a great time in LA!</p>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="{intervalCarouselItem}">
                 <img ngSrc="./assets/images/2.png" height="450" width="100" class="fill d-block w-100" alt="..."
                     priority>
                 <div class="carousel-caption">
@@ -26,7 +25,7 @@
                     <p>We had such a great time in LA!</p>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="{intervalCarouselItem}">
                 <img ngSrc="./assets/images/3.png" height="450" width="100" class=" fill w-100" alt="..." priority>
                 <div class="carousel-caption">
                     <h3>Los Angeles</h3>
@@ -45,15 +44,4 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    -- <section id="home" class="container-fluid">
-        <div class="container">
-            <img src="./assets/images/pisa.png" height="100%" width="100%" alt="">
-        </div>
-    </section>
-    <section id="historia" class="container-fluid">
-        <div class="container" style="height: 100%; width: 100%;">
-            historiaNarrativa
-        </div>
-    </section> --
 </div>

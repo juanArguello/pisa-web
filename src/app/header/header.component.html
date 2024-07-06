@@ -1,4 +1,33 @@
-<nav class="navbar navbar-expand-lg">
+<!--  <nav class="navbar navbar-expand-lg  sticky-top border-bottom">
+    <div class="container">
+        <a class="navbar-brand d-md-none" href="#">
+            <img src="./assets/images/pisa.png" alt="Logo" width="90" height="35" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+            aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Pisa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 justify-content-between">
+                    <li class="nav-item"><a class="nav-link" href="#">Tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg fixed-top sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="./assets/images/pisa.png" alt="Logo" width="90" height="35" class="d-inline-block align-text-top">
@@ -8,22 +37,28 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" #navbarSupportedContent>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link text-white" aria-current="page" (click)="closeMenu()" routerLink="/"
-                        routerLinkActive="active">{{nombresCabeceras[0]}}</a>
+                        routerLinkActive="active">{{headers[0]}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" (click)="closeMenu()" routerLink="nosotros">{{nombresCabeceras[1]}}</a>
+                    <a class="nav-link text-white" (click)="closeMenu()"
+                        routerLink="nosotros">{{headers[1]}}</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item ">
+                    <a class="nav-link  text-white" (click)="closeMenu()" routerLink="productos">
+                        {{headers[2]}}
+                    </a>
+                </li>
+               <!--  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        {{nombresCabeceras[2]}}
+                        {{headers[2]}}
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item text-white" (click)="closeMenu()" routerLink="productos" >
+                            <a class="dropdown-item text-white" (click)="closeMenu()" routerLink="productos">
                                 Lista Productos
                             </a>
                         </li>
@@ -33,13 +68,13 @@
                         </li>
                         <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
                     </ul>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link  text-white" routerLink="servicios">{{headers[3]}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  text-white" href="#">{{nombresCabeceras[3]}}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  text-white" (click)="closeMenu()" routerLink="contactos" >
-                        {{nombresCabeceras[4]}}
+                    <a class="nav-link  text-white" (click)="closeMenu()" routerLink="contactos">
+                        {{headers[4]}}
                     </a>
                 </li>
             </ul>

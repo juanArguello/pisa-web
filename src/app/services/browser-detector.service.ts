@@ -8,11 +8,13 @@ export class BrowserDetectorService {
 
 	constructor(private deviceService: DeviceDetectorService) { }
 
-	isMobile(): boolean {
+	public isMobile(): boolean {
 		return this.deviceService.isMobile();
 	}
 
-	isDesktop(): boolean{
+	public isDesktop(): boolean{
 		return this.deviceService.isDesktop();
 	}
+
+	
 }

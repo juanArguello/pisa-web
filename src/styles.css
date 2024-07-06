@@ -2,15 +2,20 @@
 
 
 /* Eliminar el subrayado de los enlaces (CSS) */
-a:link, a:visited, a:active {
-    text-decoration:none;
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
 }
 
-body{
-    overflow-x: hidden; /* Prevent scroll on narrow devices */
+body {
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
     /*background-color: darkgrey;*/
-} 
+}
 
 .wrap {
     padding-bottom: 60px;
 }
+
+

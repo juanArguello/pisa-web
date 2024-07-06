@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
     styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-    public empresa: any = {anho: '2024', nombre: 'PISA'};
+    public anho: string =  '2024';
+    public empresaFooter: string = `© ${this.anho} Proveedora Integral S.A.`;
+    public urlInstagram: string = "https://www.instagram.com/proveedora_integral_sa";
+    public urlFacebook: string = "https://www.facebook.com/pisa";
 }
