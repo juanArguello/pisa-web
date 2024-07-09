@@ -1,26 +1,63 @@
-# PisaWeb
+<h1 align="center">PISA - Proveedora Integral S.A.</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+<p align="center">
+  <img src="https://github.com/juanArguello/pisa-web/blob/main/src/assets/images/pisa.png?raw=true" alt="pisa-logo" width="200px" height="80px"/>
+  <br>
+  <em>El proyecto fue generado con Angular CLI versión 17.1.1.</em>
+  <br>
+</p>
 
-## Development server
+# Descripción
+PISA es un Sitio Web para la empresa Proveedora Integral S.A., donde presenta información relevante sobre la empresa, sus productos y servicios, su historia y contacto, así como interactuar con clientes, socios y otros interesados.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Herramientas utilizadas
+  <p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Angular_gradient.png/600px-Angular_gradient.png?20231107180344" alt="angular logo" width="30px" height="25px">
+    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="30px" height="25px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png" alt="Docker logo" width="35px" height="25px" >
+  </p>
 
-## Code scaffolding
+ - [Angular](https://angular.dev/) 
+ - [Bootstrap](https://getbootstrap.com/)
+ - [Docker](https://www.docker.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pre-requisitos
 
-## Build
+ - [Node.js](https://nodejs.org/en)
+ - [Git](https://git-scm.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Deploy del proyecto
 
-## Running unit tests
+Clonar el proyecto 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+git clone https://github.com/juanArguello/pisa-web.git
+```
 
-## Running end-to-end tests
+Instalar las dependencias
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm install 
+```
+
+Compilar los archivos javascript y crear el directorio `dist/`
+
+```
+npm run build
+```
+
+Se obtiene el directorio `dist/pisa-web/browser/` donde se encuenta los archivos estaticos html5, css3 y 
+javascript compilados. Estos archivos se pueden alojar en un servidor Apache, Nginx o en un hosting.
+
+## Ejecutando en un contenedor
+
+La imagen de pisa-web esta alojado en [Docker Hub](https://hub.docker.com/u/jarguello). El comando para ejecutar
+el contenedor:
+
+```
+docker run --name algun-nombre -p 80:80 jarguello/pisa-web
+```
+
 
 ## Further help
 

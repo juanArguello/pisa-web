@@ -2,9 +2,7 @@
 
 
 /* Eliminar el subrayado de los enlaces (CSS) */
-a:link,
-a:visited,
-a:active {
+a:link, a:visited, a:active {
     text-decoration: none;
 }
 
@@ -17,5 +15,4 @@ body {
 .wrap {
     padding-bottom: 60px;
 }
-
 
