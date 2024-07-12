@@ -7,8 +7,7 @@ a:link, a:visited, a:active {
 }
 
 body {
-    overflow-x: hidden;
-    /* Prevent scroll on narrow devices */
+    overflow-x: hidden;  /* Prevent scroll on narrow devices */
     /*background-color: darkgrey;*/
 }
 
@@ -16,3 +15,6 @@ body {
     padding-bottom: 60px;
 }
 
+img {
+    max-width: 100%;
+}

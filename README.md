@@ -22,8 +22,7 @@ PISA es un Sitio Web para la empresa Proveedora Integral S.A., donde presenta in
  - [Docker](https://www.docker.com/)
 
 ## Pre-requisitos
-
- - [Node.js](https://nodejs.org/en)
+ - Asegúrate de tener [Node.js](https://nodejs.org/en) y [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) instalados en tu máquina.
  - [Git](https://git-scm.com/)
 
 ## Deploy del proyecto

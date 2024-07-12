@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, inject } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, ViewChild, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BrowserDetectorService } from '../services/browser-detector.service';
 
@@ -10,18 +10,17 @@ import { BrowserDetectorService } from '../services/browser-detector.service';
     styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-    public headers: string[] = ['Inicio', 'Nosotros', 'Productos', 'Servicios', 'Contactos'];
-    private plataforma = inject(BrowserDetectorService);
-    @ViewChild('navbarSupportedContent') navbarContent!: ElementRef;
+    public headers: string[] = ['Inicio', 'Nosotros', 'Productos', 'Servicios', 'Contacto'];
+    public isOffcanvasOpen = false;
+    //private plataforma = inject(BrowserDetectorService);
+    constructor(){}
 
-    public closeMenu(){
-        if (this.plataforma.isMobile()) {
-            const navbarNav = this.navbarContent.nativeElement;
-            if (navbarNav && navbarNav.classList.contains('show')) {
-                navbarNav.classList.remove('show');
-            }
-        }
+    public toggleOffcanvas() {
+        this.isOffcanvasOpen = !this.isOffcanvasOpen;
+    }    
+
+    public closeNavbar() {
+        this.isOffcanvasOpen = false;
     }
 
-    
 }

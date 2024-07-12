@@ -9,9 +9,10 @@ import { Component } from '@angular/core';
 })
 export class PageNotFountComponent {
 
+	public page: string = "Página no encontrada";
+	public contenido: string = "¡No pudimos encontrar esa página!.";
+	public error: string = "Error 404 Not Found";
 	public fecha: Date = new Date();
 
-	constructor(){
-		
-	}
+	constructor(){}
 }
